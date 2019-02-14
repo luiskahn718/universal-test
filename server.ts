@@ -50,7 +50,7 @@ const redirectohttps = true;
 const wwwredirecto = true;
 app.use((req, res, next) => {
   // for domain/index.html
-  if (req.url === '/index.html') {
+  /*if (req.url === '/index.html') {
     res.redirect(301, 'https://' + req.hostname);
   }
 
@@ -85,7 +85,7 @@ app.use((req, res, next) => {
     res.send('exit');
     exit(0);
     return;
-  }
+  }*/
 
   next();
 });
